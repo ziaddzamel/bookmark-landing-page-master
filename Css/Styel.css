@@ -249,13 +249,13 @@ nav .right button:hover {
     line-height: 1.6em;
   }
   .landing-text .btns button {
-    padding: 3vw 4vw; /* Adjusted to use relative units */
+    padding: 3vw 2vw; /* Adjusted to use relative units */
   }
   .landing-text .btns button:first-child:hover {
-    padding: 2.7vw 3.7vw;
+    padding: 2.7vw 1.7vw;
   }
   .landing-text .btns button:last-child:hover {
-    padding: 2.7vw 3.7vw;
+    padding: 2.7vw 1.7vw;
   }
   
   
@@ -647,6 +647,13 @@ hr {
   width: 450px;
   margin-top: 50px;
 } 
+@media (max-width: 768px) {
+  .qus-ans{
+    text-align: start;
+    width: 100%;
+    margin-top: 50px;
+  } 
+}
 
 .qu-an .answer{
   display: none;
@@ -762,7 +769,12 @@ button[type="submit"]:hover{
   border: 2px solid var(--softred-color);
   color: var(--softred-color);
 }
-
+button[type="submit"] {
+  padding: 14px 15px;
+}
+footer .top{
+  padding: 50px 25px;
+}
 footer .bottom{
   background-color: var(--VeryDarkBlue-color);
   display: flex;
@@ -791,6 +803,10 @@ footer .social img{
   margin: 0 20px;
 }
 @media (max-width: 768px) {
+  #emailInput {
+    width: 180px;
+  
+  }
   footer .bottom{
     text-align: center;
   }
